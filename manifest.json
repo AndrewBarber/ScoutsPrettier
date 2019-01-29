@@ -1,0 +1,24 @@
+{
+    "name": "ScoutsPrettier",
+    "version": "1.0",
+    "description": "An extension to update scouts.org.uk to their new style.",
+    "manifest_version": 2,
+
+    "permissions": [
+        "activeTab"
+      ],
+
+    "content_scripts": [
+        {
+        "matches": ["https://scouts.org.uk/what-we-do/"], 
+        "js": [
+            "jquery.js",
+            "fontawesome.js",
+            "fixers.js"
+        ],
+        "css" : [
+            "bootstrap.min.css",
+            "prettier.css"        ]
+        }
+    ]
+}
